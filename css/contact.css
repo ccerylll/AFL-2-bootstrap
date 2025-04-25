@@ -1,0 +1,168 @@
+/* Style untuk Contact Section */
+.unique-contact-section {
+    background-color: #fce4e4; /* Soft pink background */
+    padding: 50px 0;
+  }
+  
+  .unique-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 36px;
+    color: #704242; /* Dark pink for the title */
+    margin-bottom: 30px;
+  }
+  
+  .unique-contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .unique-contact-details,
+  .unique-contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 48%;
+  }
+  
+  .details-title,
+  .form-title {
+    font-size: 24px;
+    color: #633838; /* Dark pink for subheadings */
+    margin-bottom: 15px;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    font-size: 16px;
+    color: #f08f8f;
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 16px;
+    color: #b47171;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .input-group textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .submit-btn {
+    background-color: #b88a8a; /* Dark pink */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #c2185b; /* Slightly darker pink on hover */
+  }
+  
+  /* Style untuk Social Icons Section */
+  .iconnn-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .iconnn-social-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .iconnn-social-icon i {
+    font-size: 30px;
+    color: #d81b60; /* Dark pink for icons */
+  }
+  
+  .iconnn-social-icon-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .iconnn-social-icon:hover i {
+    color: #c2185b; /* Darker pink on hover */
+  }
+  
+/* Responsive layout */
+@media (min-width: 768px) {
+    .home-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 6rem;
+    }
+
+    .text-section {
+        text-align: left;
+        flex: 1;
+    }
+
+    .image-section {
+        flex: 1;
+    }
+
+    .text-section h2 {
+        font-size: 2.5rem;
+    }
+
+
+    .more-btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .text-section .bold {
+        font-size: 3rem;
+    }
+    .text-section .light {
+        font-size: 2rem;
+    }
+    .ornamen-3-circle {
+        width: 150px;
+        height: 150px;
+        top: -30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ornamen-3-circle {
+        display: none;
+    }
+}

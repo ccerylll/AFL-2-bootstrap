@@ -1,0 +1,125 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Irish Grover', cursive;
+    background-color: #fff;
+    color: #7a2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.input-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-container {
+    max-width: 350px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signc {
+    font-size: 28px;
+    color: #c94f4f;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-custom {
+    background-color: #edd7d7;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    width: 100%;
+}
+
+.input-custom::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.input-custom:focus {
+    outline: none;
+    box-shadow: 0 0 5px #d2a2a2;
+}
+
+.signcc {
+    font-size: 13px;
+    color: #c94f4f;
+    margin-top: 10px;
+}
+
+.signin {
+    color: #000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button.input-custom {
+    background-color: #d8bfbf;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button.input-custom:hover {
+    background-color: #c99c9c;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    body {
+        flex-direction: row;
+    }
+
+    .input-icon {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-icon img {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .form-container {
+        flex: 1;
+        padding: 20px;
+    }
+}

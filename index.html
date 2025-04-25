@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <!-- CSS PRIBADI -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body style="background-image:url('img/background/home.png');background-position : center;background-size : cover;background-repeat : no-repeat;">
+    <div id="display_navbar">
+        <!-- Navbar -->
+        <header class="custom-navbar">
+            <div class="custom-navbar-left d-flex align-items-center">
+                <img src="./img/logo.png" alt="logo" class="custom-logo" />
+            </div>
+        
+            <!-- Hamburger icon -->
+            <button onclick="hamburger(this)" id="menu-toggle" class="hamburger d-lg-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <!-- Menu -->
+            <div class="custom-navbar-slide" id="navbar-slide">
+                <nav class="custom-navbar-center">
+                    <a href="index.html" class="custom-nav-link">Home</a>
+                    <a href="about.html" class="custom-nav-link">About</a>
+                    <a href="contact.html" class="custom-nav-link">Contact</a>
+                    <a href="product.html" class="custom-nav-link">Product</a>
+                </nav>
+                <div class="custom-navbar-right">
+                    <input type="search" placeholder="search" class="custom-search-input" />
+                    <a href="login.html" class="custom-login-btn">Login</a>
+                </div>
+            </div>
+        
+        
+        
+        </header>
+
+    </div>
+    <section class="home-container">
+        <div class="text-section position-relative">
+            <div class="ornamen-3-circle" style="background-image : url('img/ornamen/3_circle.png')"></div>
+            <h2>
+                <span class="inria_serif soft-pink light">NEED AN</span><br />
+                <span class="jacques_francois middle-pink light">UI/UX</span><br />
+                <span class="istok_web hard-pink bold">DESIGNER?</span>
+            </h2>
+            <a href="product.html">
+                <button class="more-btn">More</button>
+            
+
+        </div>
+
+        <div class="image-section">
+            <img src="img/pink_home.png" alt="Illustration" />
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

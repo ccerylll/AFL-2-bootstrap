@@ -1,0 +1,193 @@
+/* Reset margin, padding, dan box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Irish Grover", system-ui;
+}
+
+.istok_web{
+    font-family: 'Istok Web', sans-serif !important;
+}
+
+.Jacques_froncois{
+    font-family: 'Jacques Francois', serif;
+}
+.inria_serif{
+    font-family: 'Inria Serif', serif;
+}
+.soft-pink{
+    color: #F6A8A8 !important;
+}
+.middle-pink {
+    color: #DB7B7B !important;
+}
+.hard-pink {
+    color: #AE5353 !important;
+}
+
+/* Navbar utama */
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1002;
+    /* background: #fff; */
+}
+
+.custom-navbar-left {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.custom-logo {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.custom-brand {
+    color: #6d2b2b;
+    font-size: 18px;
+}
+
+/* Nav Slide Panel */
+.custom-navbar-slide {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Desktop Center Nav */
+@media (min-width: 769px) {
+    .custom-navbar-slide {
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+/* Nav Links */
+.custom-navbar-center {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.custom-nav-link {
+    color: #c26969;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.custom-nav-link:hover {
+    color: #a85d5d;
+}
+
+.custom-nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #c26969;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Navbar right section */
+.custom-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input dan tombol */
+.custom-search-input {
+    border: 1px solid #c26969;
+    border-radius: 100px;
+    padding: 5px 15px;
+    color: #c26969;
+    background: transparent;
+    outline: none;
+}
+
+.custom-search-input::placeholder {
+    color: #c26969;
+    opacity: 1;
+}
+
+.custom-login-btn {
+    border: 1px solid #6d2b2b;
+    border-radius: 100px;
+    background: transparent;
+    color: #6d2b2b;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration : none;
+}
+
+.custom-login-btn:hover {
+    background: #6d2b2b;
+    color: #fff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #6d2b2b;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+/* Mobile & Tablet Slide */
+@media (max-width: 900px) {
+    .hamburger {
+        display: block;
+    }
+
+    .custom-navbar-slide {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 80%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 100px 30px 30px;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .custom-navbar-slide.active {
+        right: 0;
+    }
+
+    .custom-navbar-center {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .custom-navbar-right {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .custom-search-input,
+    .custom-login-btn {
+        width: 100%;
+    }
+}

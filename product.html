@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    
+    <!-- CSS PRIBADI -->
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="display_navbar">
+      <!-- Navbar -->
+      <header class="custom-navbar">
+        <div class="custom-navbar-left d-flex align-items-center">
+          <img src="./img/logo.png" alt="logo" class="custom-logo" />
+        </div>
+      
+        <!-- Hamburger icon -->
+        <button onclick="hamburger(this)" id="menu-toggle" class="hamburger d-lg-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <!-- Menu -->
+        <div class="custom-navbar-slide" id="navbar-slide">
+          <nav class="custom-navbar-center">
+            <a href="index.html" class="custom-nav-link">Home</a>
+            <a href="about.html" class="custom-nav-link">About</a>
+            <a href="contact.html" class="custom-nav-link">Contact</a>
+            <a href="product.html" class="custom-nav-link">Product</a>
+          </nav>
+          <div class="custom-navbar-right">
+            <input type="search" placeholder="search" class="custom-search-input" />
+            <a href="login.html" class="custom-login-btn">Login</a>
+          </div>
+        </div>
+      
+      
+      
+      </header>
+
+    </div>
+    
+    <section class="product-container row px-5">
+    <div class="col-md-12 col-lg-4 d-flex justify-content-center">
+      <div class="vertical-carousel-container">
+        <div class="vertical-carousel">
+          <div class="vertical-slide" style="background-image: url('img/product/long-product.jpeg');"></div>
+          <div class="vertical-slide" style="background-image: url('img/product/long-swipe.jpeg');"></div>
+          <div class="vertical-slide" style="background-image: url('img/product/long-swipee.jpeg');"></div>
+        </div>
+        <button class="vertical-prev"><i class="fa-solid fa-chevron-up"></i></button>
+        <button class="vertical-next"><i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+    </div>
+    
+
+  <div class="col-md-12 col-lg-8 mb-5 pb-5">
+
+    <!-- SWIPER PERTAMA -->
+    <div id="carouselFirst" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-1.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-2.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-3.jpeg')"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-6.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-7.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-8.jpeg')"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFirst" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselFirst" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+      </button>
+    </div>
+
+    <!-- SWIPER KEDUA -->
+    <div id="carouselSecond" class="carousel slide mt-5 pt-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-2 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-half-left.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-4.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-5.jpeg')"></div>
+            </div>
+            <div class="col-md-2 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-half-right.jpeg')"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-9.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-10.jpeg')"></div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-3 card-responsive-pribadi">
+              <div class="card-swipe" style="background-image : url('img/product/swipe-11.jpeg')"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselSecond" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselSecond" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <footer class="footer">
+      <p class="m-0">&copy; 2025 Jia Lin. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Sebelum </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/product.js"></script>
+  
+</body>
+</html>

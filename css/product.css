@@ -1,0 +1,129 @@
+body{
+    overflow-x: hidden;
+}
+.product-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.long-image{
+    min-width: 300px;
+    max-width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.long-image:hover{
+    transform: scale(1.05);
+    /* Sedikit memperbesar gambar saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Bayangan hover */
+}
+.card-swipe{
+    min-width : 80px;
+    max-width: 300px;
+    height: 180px;
+    border-radius : 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.card-swipe:hover {
+    transform: scale(1.05);
+    /* Sedikit memperbesar gambar saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Bayangan hover */
+}
+
+.footer {
+    width: 100vw;
+    height: 80px;
+    background-color: #C4A6A6;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 950px) {
+    .product-container{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 765px) {
+    .card-responsive-pribadi {
+        display: flex;
+        justify-content: center;
+    }
+    .card-responsive-pribadi .card-swipe{
+        min-width: 300px;
+        max-width: 650px;
+    }
+}
+
+
+
+
+.vertical-carousel-container {
+    position: relative;
+    width: 300px;
+    /* sesuaikan dengan ukuran */
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.vertical-carousel {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+
+.vertical-slide {
+    min-height: 500px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+}
+
+.vertical-slide:hover {
+    transform: scale(1.05);
+    /* Sedikit memperbesar gambar saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Bayangan hover */
+}
+
+.vertical-prev,
+.vertical-next {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    z-index: 10;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.vertical-prev {
+    top: 10px;
+}
+
+.vertical-next {
+    bottom: 10px;
+}
